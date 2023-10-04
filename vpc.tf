@@ -26,30 +26,30 @@ resource "aws_subnet" "private_subnet" {
 }
 
 
-resource "aws_subnet" "eu-central-1a" {
-    vpc_id = aws_vpc.myvpc.id
-    cidr_block =  "10.0.0.0/24"
-    availability_zone = "eu-central-1a"
-
-    tags = {
-        name = "eu-central-1a"
-    }
-}
-
-resource "aws_subnet" "eu-central-1b" {
-    vpc_id = aws_vpc.myvpc.id
-    cidr_block =  "10.0.0.0/24"
-    availability_zone = "eu-central-1b"
-
-    tags = {
-        name = "eu-central-1b"
-    }
-}
-
-resource "aws_internet_gateway" "mygw" {
-    vpc_id = aws_vpc.myvpc.id
-
-    tags = {
-        name = "myIg"
-    }
-}
+#resource "aws_subnet" "eu-central-1a" {
+#    vpc_id = aws_vpc.myvpc.id
+#    cidr_block =  "10.0.0.0/24"
+#    availability_zone = "eu-central-1a"
+#
+#    tags = {
+#        name = "eu-central-1a"
+#    }
+#}
+#
+#resource "aws_subnet" "eu-central-1b" {
+#    vpc_id = aws_vpc.myvpc.id
+#    cidr_block =  "10.0.0.0/24"
+#    availability_zone = "eu-central-1b"
+#
+#    tags = {
+#        name = "eu-central-1b"
+#    }
+#}
+#
+#resource "aws_internet_gateway" "mygw" {
+#    vpc_id = aws_vpc.myvpc.id
+#
+#    tags = {
+#        name = "myIg"
+#    }
+#}
